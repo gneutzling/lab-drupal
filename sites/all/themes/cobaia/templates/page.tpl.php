@@ -5,12 +5,17 @@
 //page--[CONTENT TYPE].tpl.php
 ?>
 <?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
-<!-- page.tpl.php-->
+<!-- page.tpl.php -->
 <?php } ?>
 
 <?php print $mothership_poorthemers_helper; ?>
 
+
+
 <header role="banner">
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptate, numquam sint. Necessitatibus quam unde temporibus hic, earum veniam repellendus dicta beatae optio. Laboriosam ab explicabo atque, ratione, libero quos?</p>
+
   <div class="siteinfo">
     <?php if ($logo): ?>
       <figure>
@@ -19,24 +24,9 @@
       </a>
       </figure>
     <?php endif; ?>
-
-    <?php if($site_name OR $site_slogan ): ?>
-    <hgroup>
-      <?php if($site_name): ?>
-        <h1><?php print $site_name; ?></h1>
-      <?php endif; ?>
-      <?php if ($site_slogan): ?>
-        <h2><?php print $site_slogan; ?></h2>
-      <?php endif; ?>
-    </hgroup>
-    <?php endif; ?>
   </div>
 
-  <?php if($page['header']): ?>
-    <div class="header-region">
-      <?php print render($page['header']); ?>
-    </div>
-  <?php endif; ?>
+  
 
 </header>
 
@@ -73,7 +63,7 @@
 
     <?php print render($page['content_post']); ?>
 
-  </div><!-- /main-->
+  </div><!-- /main -->
 
   <?php if ($page['sidebar_first']): ?>
     <div class="sidebar-first">
@@ -86,7 +76,7 @@
       <?php print render($page['sidebar_second']); ?>
     </div>
   <?php endif; ?>
-</div><!-- /page-->
+</div><!-- /page -->
 
 <footer role="contentinfo">
   <?php print render($page['footer']); ?>
