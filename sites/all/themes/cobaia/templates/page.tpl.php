@@ -13,9 +13,6 @@
 
 
 <header role="banner">
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptate, numquam sint. Necessitatibus quam unde temporibus hic, earum veniam repellendus dicta beatae optio. Laboriosam ab explicabo atque, ratione, libero quos?</p>
-
   <div class="siteinfo">
     <?php if ($logo): ?>
       <figure>
@@ -25,9 +22,6 @@
       </figure>
     <?php endif; ?>
   </div>
-
-  
-
 </header>
 
 <div class="page">
